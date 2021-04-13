@@ -1,0 +1,332 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>SynerD</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width device-width, initial-scale 1.0">
+
+	<link rel="stylesheet" href="{% static 'Directory/Layout.css' %}">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	
+<style>
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+.cancel {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+.cancel, .signup {
+  float: left;
+  width: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+.sheet {
+  display: none; 
+  position: fixed; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: #000000;
+  padding-top: 50px;
+}
+
+.sheet-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; 
+  border: 1px solid #888;
+  width: 80%; 
+}
+
+.sheet2 {
+  display: none; 
+  position: fixed; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: #000000;
+  padding-top: 50px;
+}
+
+.sheet2-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; 
+  border: 1px solid #888;
+  width: 80%; 
+}
+
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.clearfix2::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+</style>	
+</head>
+
+<body>
+	<div id="wrapper">
+	<header>
+		<h2><a href="Wireframe 2.html">About Us</a></h2>
+		<h2><a href="Wireframe 2.html">Contact Us</a>|</h2>
+		<h2><a href="Wireframe 2.html">Galleries</a>|</h2>
+		<h2><a href="Wireframe 2.html">Search</a>|</h2>
+		<h1><a href="Wireframe 2.html">SynerD Synergy of Diaspora</a></h1>
+		<br>
+		<h1>Let’s Serve purposefully</h1>
+		
+	<div class="row">
+		<h2 onclick="document.getElementById('id2').style.display='block'" style="width:auto;">Sign in</a></h2>
+		<h2 onclick="document.getElementById('id').style.display='block'" style="width:auto;">Join Us |</h2>
+	</div>
+	
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="Wireframe 2.html">Our Work</a></li>
+			<li><a href="Wireframe 2.html">Members</a></li>
+			<li><a href="Wireframe 2.html">Resources</a></li>
+		</ul>
+	</nav>
+
+	<main>	
+
+		
+	<div class="column2">
+	
+		<div class="row2" style="background-color:#aaa;">
+
+		<p>Sliders:</p>
+		<p>Attractive Images or videos with narrative</p>
+		<iframe width="640" height="360" src="https://www.youtube.com/embed/pb7_YJp9bVA"></iframe>
+
+		</div>
+				
+		<div class="row2" style="background-color:#bbb;">
+
+		<div class="row">
+			<div class="column3" style="background-color:#ddd;">
+			
+				<div class="tab">
+				<button class="tablinks">ID Protection</button>
+				<button class="tablinks">Corpses Repatriation</button>
+				<button class="tablinks">Assistance Programs</button>
+				</div>
+				
+			<p>Narrative for the selected tab</p>
+			</div>
+		
+			<div class="column3" style="background-color:#eee;">
+			<p>What's New?</p>
+			
+			<br><br><br><br><br>
+			<p>Announcements</p>
+			
+			<br><br><br><br><br>
+			<p>Feature News</p>
+			</div>
+		</div>
+
+		
+		<div class="row2" style="background-color:#ccc;">
+
+		<p>Feature Activity</p>
+		</div>
+		
+	</div>
+
+
+
+
+
+	<div id="id" class="sheet">
+		<span onclick="document.getElementById('id').style.display='none'" class="close" title="Close sheet">&times;</span>
+		<form class="sheet-content" action="/action.php">
+		
+	<div class="container">
+		<h3>Sign Up</h3>
+		<p>Please fill in this form to create an account.</p>
+		<hr>
+		
+		<label for="username"><b>Username</b></label>
+		<input type="text" placeholder="Enter Username" name="username" required>
+
+		<label for="psw"><b>Password</b></label>
+		<input type="password" placeholder="Enter Password" name="psw" required>
+		
+		<label for="FN"><b>First Name</b></label>
+		<input type="text" placeholder="Enter first name (optional)" name="FN" >
+		
+		<label for="MN"><b>Middle Name</b></label>
+		<input type="text" placeholder="Enter middle name (optional)" name="MN" >
+		
+		<label for="LN"><b>Last Name</b></label>
+		<input type="text" placeholder="Enter last name" name="LN" required>
+		
+		<label for="gen"><b>Gender</b></label>
+		<input type="text" placeholder="Enter gender" name="gen" required>
+		
+		<label for="STAD"><b>Street Address</b></label>
+		<input type="text" placeholder="Enter street address" name="STAD" required>
+		
+		<label for="city"><b>City</b></label>
+		<input type="text" placeholder="Enter city" name="city" required>
+		
+		<label for="state"><b>State(US states only)</b></label>
+		<input type="text" placeholder="Enter state" name="state" required>
+		
+		<label for="zc"><b>Zip Code</b></label>
+		<input type="text" placeholder="Enter zip code" name="zc" required>
+		
+		<label for="email"><b>Email</b></label>
+		<input type="text" placeholder="Enter email" name="email" required>
+		
+		<label for="cell"><b>Cell Phone Number</b></label>
+		<input type="text" placeholder="Enter cell phone number" name="cell" required>
+		
+		<label for="country"><b>Country of Origin</b></label>
+		<input type="text" placeholder="Enter country of origin" name="country" required>
+
+		<label for="DOB"><b>Date of Birth</b></label>
+		<input type="text" placeholder="Enter date of birth" name="DOB" required>
+
+		<label for="MO"><b>Member Organization</b></label>
+		<input type="text" placeholder="Enter member organization (optional) " name="MO">
+	
+	<div class="clearfix">
+        <button type="button" onclick="document.getElementById('id').style.display='none'" class="cancel">Cancel</button>
+        <button type="submit" class="signup">Sign Up</button>
+    </div>
+    </div>
+		</form>
+		
+		
+	<div id="id2" class="sheet2">
+	<span onclick="document.getElementById('id2').style.display='none'" class="close" title="Close sheet2">&times;</span>
+	<form class="sheet2-content" action="/action2.php">
+		
+	<div class="container">
+		<h3>Log In</h3>
+		<hr>
+		
+		<label for="username"><b>Username</b></label>
+		<input type="text" placeholder="Enter Username" name="username" required>
+
+		<label for="psw"><b>Password</b></label>
+		<input type="password" placeholder="Enter Password" name="psw" required>
+		
+	
+	<div class="clearfix2">
+        <button type="button" onclick="document.getElementById('id2').style.display='none'" class="cancel">Cancel</button>
+        <button type="submit" class="signup">Enter</button>
+		</div>
+    </div>
+	
+	</form>
+	</div>
+		
+	</div>
+
+	<script>
+		var sheet = document.getElementById('id');
+		window.onclick = function(event) 
+		{
+			if (event.target == sheet) 
+			{
+				sheet.style.display = "none";
+			}
+		}
+
+		var sheet2 = document.getElementById('id2');
+		window.onclick = function(event) 
+		{
+			if (event.target == sheet2) 
+			{
+				sheet2.style.display = "none";
+			}
+		}
+	</script>
+	
+
+	</main>
+
+	<footer2>
+		<br>
+			<a href="Wireframe 2.html">Get Involved</a>    |     <a href="Wireframe 2.html">Blog</a>    |     <a href="Wireframe 2.html">Ways to Give</a>    |     <a href="Wireframe 2.html">Expenditures</a>    |     <a href="Wireframe 2.html">Revenues</a>    |     <a href="Wireframe 2.html">About Us</a>
+		<br><br>	
+			SynerD
+		<br>	
+			Address, Phone, Email, Website 
+		<br>
+		<a href="Wireframe 2.html">Site Map</a>    |     <a href="Wireframe 2.html">Terms & Conditions</a>   |   <a href="Wireframe 2.html">Privacy Policy</a>    |    Copyright &copy; 2020
+	</footer2>
+
+
+</div>
+</body>
+
+</html>
